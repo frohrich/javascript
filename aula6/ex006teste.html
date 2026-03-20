@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(36, 36, 179, 0.37);
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            padding: 200px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let nome = prompt('Qual é o seu nome?')
+        let salario = Number(prompt('Qual é o seu salário?'))
+        let aumento = Number(prompt('Qual porcentagem você quer de aumento?'))
+        let valorAumento = (salario * aumento) / 100
+        let novoSalario = salario + valorAumento
+        document.write(`Nome: ${nome}`)
+        document.write(`<br>`)
+        document.write(`Nome em maiúsculo: ${nome.toUpperCase()}`)
+        document.write(`<br>`)
+        document.write(`<br>`)
+        document.write(`Salário atual: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+        document.write(`<br>`)
+        document.write(`Aumento: ${aumento}%`)
+        document.write(`<br>`)
+        document.write(`<br>`)
+        document.write(`Valor do aumento: ${valorAumento.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+        document.write(`<br>`)
+        document.write(`Novo salário: ${novoSalario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
