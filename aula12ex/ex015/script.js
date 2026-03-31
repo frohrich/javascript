@@ -9,10 +9,12 @@ function verificar() {
         let fsex = document.getElementsByName('radsex')
         let idade = ano - Number(fano.value)
         let gen = ''
+        let artigo = ''
         let img = document.createElement('img')
         img.setAttribute('id', 'foto')
         if (fsex[0].checked) {
             gen = 'Homem'
+            artigo = 'um'
             if (idade >= 0 && idade < 10) {
                 // Criança
                 img.setAttribute('src', 'foto-bebe-m.jpg')
@@ -28,6 +30,7 @@ function verificar() {
             }
         } else if (fsex[1].checked) {
             gen = 'Mulher'
+            artigo = 'uma'
             if (idade >= 0 && idade < 10) {
                 // Criança
                 img.setAttribute('src', 'foto-bebe-f.jpg')
@@ -43,7 +46,7 @@ function verificar() {
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos ${gen} com ${idade} anos.`
+        res.innerHTML = `Detectamos ${artigo} ${gen} com ${idade} anos.`
         res.appendChild(img)
     }
 }
