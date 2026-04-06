@@ -1,8 +1,8 @@
-console.log('iniciou')
-
-let c = 5
+let c = 10
 
 do {
-    console.log(`Número ${c}`)
+    if (c % 2 === 0) {
+        console.log(c)
+    }
     c--
-} while (c >= 1);
+} while (c >= 0);
