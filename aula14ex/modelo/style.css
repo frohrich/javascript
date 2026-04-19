@@ -3,12 +3,6 @@ body {
     font: normal 15pt Arial;
 }
 
-img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-
 header{
     color: white;
     text-align: center;
